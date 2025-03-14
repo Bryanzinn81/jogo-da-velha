@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.quadrado{
+    border: 0.1em solid rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    padding: 1em;
+    display: flex;
+    cursor: pointer;
+    background-color: lightgray;;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+}
+.quadrado:hover{
+    background-color: gray;
+}
+h1{
+    text-align: center;
+}
+#quadrados{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1em;
+    margin: 2em auto;
+}
+.fileiras{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+#pFileira{
+    gap: 1em;
+}
+#sFileira{
+    gap: 1em;
+}
+#tFileira{
+    gap: 1em;
+}
+#reset{
+    margin-top: 2em;
+    padding: 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 1em;
+}
