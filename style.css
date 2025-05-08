@@ -1,53 +1,101 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-.quadrado{
-    border: 0.1em solid rgb(0, 0, 0);
-    width: 100px;
-    height: 100px;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
     padding: 1em;
-    display: flex;
-    cursor: pointer;
-    background-color: lightgray;;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-size: 5em;
-}
-.quadrado:hover{
-    background-color: gray;
-}
-h1{
+  }
+  
+  h1 {
     text-align: center;
-}
-#quadrados{
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap:1em;
-    margin: 2em auto;
-}
-.fileiras{
+    margin-bottom: 1em;
+  }
+  
+  #info {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  
+  #quadrados {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-
-}
-#pFileira{
-    gap: 1em;
-}
-#sFileira{
-    gap: 1em;
-}
-#tFileira{
-    gap: 1em;
-}
-#reset{
-    margin-top: 2em;
-    padding: 2em;
-    font-size: 1em;
+    gap: 0.5em;
+  }
+  
+  .fileiras {
+    display: flex;
+    gap: 0.5em;
+  }
+  
+  .quadrado {
+    width: 90px;
+    height: 90px;
+    background-color: #ddd;
+    color: #000;
+    font-size: 2.5em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
     cursor: pointer;
-    border-radius: 1em;
-}
+    transition: background-color 0.2s;
+  }
+  
+  .quadrado:hover {
+    background-color: #bbb;
+  }
+  
+  .quadrado:focus {
+    outline: 3px solid #444;
+  }
+  
+  .jogador-x {
+    color: #0074D9;
+  }
+  
+  .jogador-o {
+    color: #FF4136;
+  }
+  
+  .vencedor {
+    background-color: #2ECC40 !important;
+    color: white;
+  }
+  
+  #reset {
+    margin-top: 1.5em;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  #reset:hover {
+    background-color: #222;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .quadrado {
+      width: 70px;
+      height: 70px;
+      font-size: 2em;
+    }
+  
+    #info {
+      font-size: 1em;
+    }
+  }
+  
