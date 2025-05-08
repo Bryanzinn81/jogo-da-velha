@@ -86,7 +86,6 @@
     background-color: #222;
   }
   
-  /* Responsivo */
   @media (max-width: 600px) {
     .quadrado {
       width: 70px;

@@ -1,4 +1,3 @@
-// script.js
 const quadradosC = document.querySelectorAll(".quadrado");
 const resetar = document.getElementById("reset");
 const vezAtual = document.getElementById("vezAtual");
